@@ -93,7 +93,3 @@ def rock():
     res = genrePlaylistDriver(token, 'rock')
     response = jsonify({'data': res})
     return response
-
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
