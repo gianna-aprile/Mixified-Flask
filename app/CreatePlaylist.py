@@ -90,8 +90,8 @@ def genrePlaylistDriver(token, playlistType):
 
 def generatePlaylist(token, playlistType, userId):
     playlistName = choosePlaylistName(playlistType)
-    # TODO fix below description once I have a site
-    description = "Thanks for using Mixified!"
+    
+    description = "Thanks for using Mixified! Click here to make another playlist: https://gianna-aprile.github.io/Mixified-React/"
     
     reqHeader = {'Authorization': 'Bearer {}'.format(token), 'Content-Type': 'application/json'}
     reqBody = {'name': playlistName, 'description': description}

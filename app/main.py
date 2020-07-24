@@ -17,7 +17,6 @@ def index():
                 <p>/api/pop</p> <p>/api/hiphop</p> <p>/api/rap</p> <p>/api/r&b</p> <p>/api/edm</p>
                 <p>/api/house</p> <p>/api/country</p> <p>/api/alternative</p> <p>/api/rock </p>
             </html>'''
-  
     return res
 
 @app.route('/api/topRelatedArtists', methods=['GET'])
