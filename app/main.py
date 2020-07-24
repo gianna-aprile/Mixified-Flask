@@ -6,6 +6,20 @@ import sys
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def index():
+    res = '''<html>
+                <h2>Thanks for using the Mixified API!</h2>
+                <p>*** Please note: Spotify token must be passed in the request arguments for these endpoints to work</p>
+                <br/>
+                <p>Valid Endpoints:</p>
+                <p>/api/topRelatedArtists</p> <p>/api/recentRelatedArtists</p> <p>/api/topRelatedTracks</p>
+                <p>/api/pop</p> <p>/api/hiphop</p> <p>/api/rap</p> <p>/api/r&b</p> <p>/api/edm</p>
+                <p>/api/house</p> <p>/api/country</p> <p>/api/alternative</p> <p>/api/rock </p>
+            </html>'''
+  
+    return res
+
 @app.route('/api/topRelatedArtists', methods=['GET'])
 def topRelatedArtists():
     token = request.args.get('token')
