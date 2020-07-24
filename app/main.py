@@ -6,10 +6,6 @@ import sys
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/")
-def index():
-    return jsonify({"hello": "world", "from": "index"})
-
 @app.route('/api/topRelatedArtists', methods=['GET'])
 def topRelatedArtists():
     token = request.args.get('token')
