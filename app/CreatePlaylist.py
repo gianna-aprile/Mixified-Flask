@@ -1,8 +1,8 @@
 import asyncio
 import requests
-from ArtistDataHandling import getRelatedArtists, getArtistsOfTracks, filterArtistsByGenre
-from TrackDataHandling import getTopSongsOfArtists
-from GetUserData import getUserTopArtists, getUserId, getUserSavedTracks, getUserTopTracks
+from app.ArtistDataHandling import getRelatedArtists, getArtistsOfTracks, filterArtistsByGenre
+from app.TrackDataHandling import getTopSongsOfArtists
+from app.GetUserData import getUserTopArtists, getUserId, getUserSavedTracks, getUserTopTracks
 
 # *** Steps for topRelatedArtists, recentRelatedArtists, and topRelatedTracks type playlists
 # Create a base artist list to start with depending on playlist type

@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from CreatePlaylist import relatedArtistPlaylistDriver, genrePlaylistDriver
+from app.CreatePlaylist import relatedArtistPlaylistDriver, genrePlaylistDriver
 import sys
 
 app = Flask(__name__)
