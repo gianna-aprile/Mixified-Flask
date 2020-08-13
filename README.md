@@ -12,7 +12,7 @@ Mixified generates personalized playlists based on your Spotify saved tracks, to
 Mixified React Repo: https://github.com/gianna-aprile/Mixified-React  
 Mixified API/Backend Repo: https://github.com/gianna-aprile/Mixified-Flask
 
-Mixified is a React webapp that is optimized for viewing on both computers and smaller devices. Once a user requests to create a playlist, the React app sends the user's Spotify authorized token to the Python Flask app through the Mixified API. The backend then performs carefully thought out algorithms that curate a smart, personalized playlist for the user, ensuring that the same playlist never gets created twice. 
+Mixified is a React webapp that is optimized for viewing on both computers and smaller devices. Once a user requests to create a playlist, the React app sends the user's Spotify authorized token to the Python Flask app through the Mixified API. The backend then performs carefully thought-out algorithms that curate a smart, personalized playlist for the user that automatically saves to their Spotify library. 
 
 ---
 ## Mixified Features 
